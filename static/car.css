@@ -1,0 +1,229 @@
+/* Reset de estilos padrão */
+body, ul, li, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+    margin: 0;
+    flex-direction: column; /* Coloca os elementos na direção da coluna */
+}
+
+/* Estilos do container principal */
+.container {
+    max-width: 800px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Garante que o container ocupe o espaço disponível */
+    text-align: center; /* Centraliza o conteúdo dentro do container */
+    position: relative; /* Necessário para posicionar elementos dentro */
+}
+
+/* Estilos do título principal */
+h1 {
+    color: #000;
+    font-size: 28px;
+    margin: 0 0 20px;
+}
+
+/* Estilos do botão voltar */
+.voltar-button {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    margin-right: 20px;
+    position: absolute; /* Fixado no topo à esquerda */
+    top: 20px;
+    left: 20px;
+}
+
+/* Estilos do botão Limpar Carrinho */
+.limpar-carrinho-button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    position: absolute; /* Fixado no canto superior direito do container */
+    top: 20px;
+    right: 20px; /* Colocado à direita do retângulo */
+}
+
+/* Efeito de hover no botão Limpar Carrinho */
+.limpar-carrinho-button:hover {
+    background-color: #e74c3c;
+}
+
+/* Estilos para o botão de remover item do carrinho */
+.remover-item-do-carrinho {
+    background-color: #e74c3c; /* Vermelho */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Efeito de hover no botão de remover item */
+.remover-item-do-carrinho:hover {
+    background-color: #c0392b;
+}
+
+/* Estilos para o botão Finalizar Compra */
+.checkout-button {
+    background-color: #28a745; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+/* Efeito de hover no botão Finalizar Compra */
+.checkout-button:hover {
+    background-color: #218838;
+}
+
+/* Estilos para o total do carrinho */
+.total-price p {
+    font-size: 22px; /* Aumenta a fonte */
+    font-weight: bold;
+    color: #2ecc71; /* Cor verde para o texto */
+    margin-top: 30px;
+}
+
+/* Estilos para o valor total (em vermelho) */
+.total-price p span {
+    color: #e74c3c; /* Vermelho para o valor */
+}
+
+/* Estilos para a lista de itens no carrinho */
+.carrinho-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilos de um item no carrinho */
+.carrinho-item {
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s;
+}
+
+/* Efeito de sombra ao passar o mouse em um item no carrinho */
+.carrinho-item:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos da imagem do cupcake no carrinho */
+.carrinho-item-image img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+/* Estilos do nome do cupcake */
+.cupcake-name {
+    font-size: 20px;
+    color: #333;
+}
+
+/* Estilos da descrição do cupcake */
+.cupcake-description {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Estilos do preço e quantidade do cupcake */
+.cupcake-price,
+.cupcake-quantity,
+.cupcake-total {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Estilos de ênfase no preço */
+.cupcake-price {
+    font-weight: bold;
+    color: #ff6b00;
+    margin-top: 8px;
+}
+
+/* Estilos de ênfase na quantidade */
+.cupcake-quantity {
+    font-weight: bold;
+    color: #3498db; /* Azul para destacar */
+}
+
+/* Estilos de ênfase no total */
+.cupcake-total {
+    font-weight: bold;
+    color: #e74c3c; /* Vermelho para o total */
+}
+
+/* Estilos para a mensagem de carrinho vazio */
+.empty-cart {
+    text-align: center;
+    color: #777;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Estilos para a sobreposição (overlay) */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
+    z-index: 100; /* Coloca a sobreposição na frente de outros elementos */
+    display: none; /* Inicialmente oculta a sobreposição */
+}
+
+/* Estilos para a caixa de diálogo de erro */
+.error-dialog {
+    position: fixed;
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza a caixa de diálogo */
+    background-color: #fff; /* Fundo branco */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    z-index: 101; /* Coloca a caixa de diálogo na frente da sobreposição */
+    display: none; /* Inicialmente oculta a caixa de diálogo */
+}
+
+.error-message {
+    font-size: 18px;
+    color: #ff0000; /* Cor vermelha para erros */
+    text-align: center;
+}

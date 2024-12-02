@@ -1,0 +1,192 @@
+/* Reset de estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Layout do painel de administração */
+.admin-dashboard {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+/* Estilos do cabeçalho */
+.admin-header {
+    background-color: #290fbd;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.admin-header h1 {
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+.admin-header .logout-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #333;
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.admin-header .logout-button:hover {
+    background-color: #ff6b00;
+}
+
+/* Estilos do menu de administração */
+.admin-menu {
+    background-color: #333;
+    color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.admin-menu h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #ff6b00;
+}
+
+.admin-menu ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.admin-menu ul li {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.admin-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+.admin-menu ul li a:hover {
+    color: #ff6b00;
+}
+
+/* Estilos do conteúdo do painel de administração */
+.admin-content {
+    padding: 30px;
+}
+
+.admin-content h3 {
+    font-size: 28px;
+    color: #ff5733;  /* Cor visível para o título */
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.admin-content p {
+    font-size: 20px;
+    color: #555;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Estilo para a mensagem */
+.mensagem {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo para a mensagem de sucesso */
+.mensagem-sucesso {
+    background-color: #4CAF50;
+}
+
+/* Estilo para a mensagem de erro */
+.mensagem-erro {
+    background-color: #f44336;
+}
+
+.logout-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000; /* Garante que o botão esteja acima de outros elementos */
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #ff6b00;
+}
+
+.logout-text {
+    margin-right: 8px;
+}
+
+/* Estilos Responsivos */
+@media screen and (max-width: 768px) {
+    .admin-dashboard {
+        padding: 20px;
+    }
+
+    .admin-menu {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .admin-menu h2 {
+        font-size: 22px;
+    }
+
+    .admin-content h3 {
+        font-size: 24px;
+    }
+
+    .admin-content p {
+        font-size: 18px;
+    }
+
+    .admin-header h1 {
+        font-size: 24px;
+    }
+}

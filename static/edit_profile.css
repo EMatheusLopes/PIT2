@@ -1,0 +1,86 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333; /* Melhore a legibilidade definindo uma cor de texto */
+}
+
+/* Estilos para o formulário */
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333; /* Melhore a legibilidade definindo uma cor de texto */
+}
+
+.form-field {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333; /* Melhore a legibilidade definindo uma cor de texto */
+}
+
+/* Estilos para os botões */
+.register-button,
+.action-button {
+    display: inline-block;
+    padding: 12px 24px; /* Espaçamento interno uniforme */
+    margin: 0 10px; /* Espaçamento simétrico direita/esquerda */
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Adicione transições suaves */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Adicione uma leve sombra */
+}
+
+.register-button:hover,
+.action-button:hover {
+    background-color: #0056b3; /* Cor de fundo quando o mouse passa por cima */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Aumente a sombra no hover */
+}
+
+
+/* Estilos para a mensagem de sucesso */
+.success-message {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center; /* Centralize o texto */
+    border-radius: 5px;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
